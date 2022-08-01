@@ -72,7 +72,7 @@ router.delete('/candidate/:id', (req, res) => {
 });
 
 
-// CREATE (POST) A CANDIDATE
+// ADD (POST) A CANDIDATE
 router.post('/candidate', ({ body }, res) => {
   const errors = inputCheck(body, 'first_name', 'last_name', 'industry_connected');
   if (errors) {
